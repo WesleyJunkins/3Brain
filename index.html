@@ -21,11 +21,19 @@
         }
     </style>
     <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="script.js" type="module" defer></script>
 </head>
 
 <body>
     <canvas id="renderCanvas"></canvas>
-    <script src="script.js" type="module">
+    <script type="module">
+        import * as ThreeB from "./script.js";
+
+        //Test Code
+        const myScene = new ThreeB.createScene();
+        const myCamera = new ThreeB.camera(myScene);
+
     </script>
 </body>
+
 </html>

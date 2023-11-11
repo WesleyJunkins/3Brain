@@ -1,4 +1,4 @@
-class createScene {
+export class createScene {
     //Constructor for making a basic starting scene.
     constructor() {
         const canvas = document.getElementById("renderCanvas");
@@ -19,10 +19,9 @@ class createScene {
     }
 }
 
-class camera {
+export class camera {
     constructor(masterClass) {
         const currentScene = masterClass;
-        currentScene.consoleOut();
     }
 
     getCoordinated() {
@@ -44,7 +43,7 @@ class camera {
 
 }
 
-class ground {
+export class ground {
     constructor(masterClass) {
 
     }
@@ -74,7 +73,7 @@ class ground {
     }
 }
 
-class light {
+export class light {
     constructor(masterClass) {
 
     }
@@ -85,9 +84,7 @@ class light {
 
 
 
-//Test Code
-const myScene = new createScene();
-const myCamera = new camera(myScene);
+
 
 
 
